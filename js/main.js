@@ -70,6 +70,7 @@ console.log(visiVardai);
 1.	1-2+3-4+5
 2.	Rezultatą išvesti į console*/
 const skaiciai = [1,2,3,4,5,];
+console.log(skaiciai);
 
 let suma= skaiciai[0];
 suma = suma - skaiciai[1];
@@ -79,7 +80,7 @@ suma = suma + skaiciai[4];
 
 console.log(suma);
 
-console.log(skaiciai);
+
 
 
 /*const atsakymas = skaiciai[0] - skaiciai[1]+skaiciai[2]-skaiciai[3]+skaiciai[4];
@@ -88,9 +89,9 @@ console.log(atsakymas);*/
 
 /*0.	Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas*/
 const klasiokai=['Adomas', 'Lina', 'Andrius', 'Niga', 'Viktoras'];
-const eileNuoGalo= klasiokai[4] + ', '+ klasiokai[3]+ ', '
-+ klasiokai[2]+ ', '+ klasiokai[1]+ ', '
-+klasiokai[0];
+
+const eileNuoGalo= `${klasiokai[4]}, ${klasiokai[3]},
+ ${klasiokai[2]}, ${klasiokai[1]}, ${klasiokai[0]}`;
 console.log(klasiokai);
 console.log(eileNuoGalo);
 
