@@ -161,6 +161,32 @@ const miestoPavadinimas = miestai[i]
     console.log(`"Aplankiau; ${miestoPavadinimas}."`);
 }
 
+const nuo = 0;
+const iki =4;
+let rezultatas =0;
+let suma = 0;
+
+for(i=nuo; i<=iki; i++){
+  suma=i;
+  rezultatas= rezultatas+suma;
+}
+console.log(rezultatas);
+
+const savaiciu = 4;
+const menesiu = 12;
+let savMen = 0;
+let menesis=0;
+
+for (let i=1; i<=menesiu; i++){
+  menesis=i;
+  savMen= menesis * savaiciu;
+  console.log(`${menesis}men yra ${savMen} savaiciu`)
+
+}
+
+
+
+
 
 
 
