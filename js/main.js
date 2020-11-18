@@ -95,7 +95,7 @@ const eileNuoGalo= `${klasiokai[4]}, ${klasiokai[3]},
 console.log(klasiokai);
 console.log(eileNuoGalo);*/
 
-console.log ('--------------------------------------------------------')
+/*console.log ('--------------------------------------------------------')
 
 const mokestis = 100;
 const nariu = 10;
@@ -176,25 +176,31 @@ function dalyba (a, b){
 dalyba (10,2)
 dalyba (100,7)
 dalyba (200,5)
+*/ 
 
 console.log ('------');
 
 function skaiciuVidurkis (list){
     let suma = 0;
-    const kiekis = list.lengt;
+    let kiekis = list.length;
+    let vidurkis = 0;
+   
+    
+
 
     for (let i=0; i<kiekis; i++){
         const skaicius = list[i];
         suma = suma + skaicius;
-
+        vidurkis = suma/kiekis;
+        
     }
+    
 
-const vidurkis = suma/kiekis;
 
 if (kiekis === 0) {
     console.log('Neturi pazymiu...');
 } else {
-    console.log(`Vidurkis: ${vidurkis}.`);
+    console.log(`${suma} dalinta is ${kiekis} Vidurkis: ${vidurkis}.`);
 }
 }
 
