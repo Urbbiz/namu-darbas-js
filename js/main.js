@@ -176,7 +176,7 @@ function dalyba (a, b){
 dalyba (10,2)
 dalyba (100,7)
 dalyba (200,5)
-*/ 
+ 
 
 console.log ('------');
 
@@ -208,3 +208,61 @@ skaiciuVidurkis ([5,10,7,8,4,5,10])
 skaiciuVidurkis ([2,4,7,9,10])
 skaiciuVidurkis ([]);
 skaiciuVidurkis ([2,10]);
+*/
+
+const raides = ["a", 'b', 'c', 'd','e','f']
+
+console.log(raides)
+console.log(raides[5],',',raides[4],', ',raides[3], ', ',raides[2],',',raides[1],',',raides[0])
+
+
+
+/*
+const stipendija = 285;
+const trukme = 6;
+let menesis =0;
+let suma = 0; 
+
+for (i=0+1; i<= trukme; i++){
+    menesis = i;
+    suma = menesis * stipendija
+
+    console.log(`po ${menesis} men. bus viso ismoketa ${suma} suma pinigu`)
+
+
+}
+*/ 
+
+function daugyba (pirmas, antras){
+    
+
+    if(typeof pirmas !== 'number'){
+        console.log (`nera skaiciaus`);
+        return;
+
+    }
+    
+    if(typeof antras !== 'number'){
+        console.log (`nera skaiciaus`)
+        return;
+    }
+        const suma = pirmas * antras
+
+    
+        console.log (`${pirmas} skaiciu padauginus is ${antras} gausime ${suma}`)
+
+
+    
+
+
+
+}
+
+daugyba (5, 10);
+daugyba (6, 10);
+daugyba (7, 10);
+daugyba ('b', 10);
+daugyba (5, 'b');
+
+
+
