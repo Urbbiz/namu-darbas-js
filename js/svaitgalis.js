@@ -92,20 +92,18 @@ for(let i=vardai.length-1; i>=0; i--){
     vardaiAtbulai= vardaiAtbulai+vardas+',';
 }
 console.log(vardaiAtbulai);
-*/
+
 
 function uzmokestis (list){
- const daugyba = list *1;
- console.log(daugyba);
-
+ 
     if (list.length === 0) {
          console.log(`ERROR: sarasas yra tuscias`);
          return;  
     }
-let suma = 0;     /*uzmokestis+uzmokestis*/ 
-let vidurkis= 0; /*suma / uzmokesi.length= vidurkis  */
+let suma = 0;     /*uzmokestis+uzmokestis*/
+// let vidurkis= 0; /*suma / uzmokesi.length= vidurkis */ 
 // let daugyba =0;
-for(i=0; i<list.length; i++){
+ /*for(i=0; i<list.length; i++){
     suma= suma+list[i];  
     
 }
@@ -130,3 +128,41 @@ uzmokestis([5, 10, 5, 10, 6, 8, 2, 7]);
 uzmokestis(["b", 10, 5, 10]);
 uzmokestis([]);
 uzmokestis([0]);
+*/
+
+/*
+const menesiu = 12;
+const metu = 5;
+let metas = 0;
+let menMetuose = 0; /* metas* menesiu = menMetuose */
+
+// for(i=1; i<=metu; i++){
+//     metas = i;
+//     menMetuose= metas * menesiu;
+
+
+// console.log(`po ${metas} metu bus viso ${menMetuose} menesiu`);
+// }
+
+// console.log('---------------');
+
+function balsai (list){
+    let balsuSuma= 0;
+    let viduriukas =0; 
+     
+
+    for(let i=0; i<list.length; i++){
+        balsuSuma = balsuSuma+ list[i];
+        viduriukas = balsuSuma /list.length;
+        
+        
+
+
+    }
+    console.log (viduriukas)
+  
+
+}
+
+
+balsai([10, 7, 8, 9, 9, 9, 6]);
